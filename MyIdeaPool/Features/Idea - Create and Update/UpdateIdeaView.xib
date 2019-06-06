@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UpdateIdeaViewController" customModule="MyIdeaPool" customModuleProvider="target">
+            <connections>
+                <outlet property="avgInputField" destination="3RS-fe-Avp" id="WiE-Zr-qxP"/>
+                <outlet property="confidenceInputField" destination="Gzj-ff-93D" id="xc7-GD-PTh"/>
+                <outlet property="contentInputField" destination="gB5-LL-04A" id="NAC-ZW-ODn"/>
+                <outlet property="easeInputField" destination="Kzn-al-xs6" id="Cb9-9H-Tdm"/>
+                <outlet property="impactInputField" destination="fZZ-Rd-VBD" id="SbF-Zf-g9b"/>
+                <outlet property="view" destination="iN0-l3-epB" id="in8-K4-Dhe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="Ekn-wf-q0F">
+                    <rect key="frame" x="35" y="69" width="344" height="531"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gB5-LL-04A" customClass="CustomTextInputField" customModule="MyIdeaPool" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="344" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="CQV-zk-1DL"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fZZ-Rd-VBD" customClass="CustomNumberInputField" customModule="MyIdeaPool" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="71" width="344" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="rdG-zS-dwN"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kzn-al-xs6" customClass="CustomNumberInputField" customModule="MyIdeaPool" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="142" width="344" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="rsm-Lp-GzU"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gzj-ff-93D" customClass="CustomNumberInputField" customModule="MyIdeaPool" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="213" width="344" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="3L6-ma-Mz4"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3RS-fe-Avp" customClass="CustomNumberInputField" customModule="MyIdeaPool" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="284" width="344" height="40"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="7Ox-Ce-Sfy"/>
+                            </constraints>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="gQV-04-zYZ">
+                            <rect key="frame" x="0.0" y="355" width="344" height="95"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QWS-Mh-Mgy">
+                                    <rect key="frame" x="0.0" y="0.0" width="344" height="40"/>
+                                    <color key="backgroundColor" red="0.0" green="0.6588235294" blue="0.26274509800000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="BF3-dh-UN2"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="SAVE">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="saveTapped:" destination="-1" eventType="touchUpInside" id="CS8-hQ-c7r"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4nh-jm-Ne3">
+                                    <rect key="frame" x="0.0" y="55" width="344" height="40"/>
+                                    <color key="backgroundColor" red="0.80784313725490198" green="0.80784313725490198" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="B3X-nT-Y7h"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <state key="normal" title="CANCEL">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="cancelTapped:" destination="-1" eventType="touchUpInside" id="POj-ke-GCT"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g0H-Ts-aqv">
+                            <rect key="frame" x="0.0" y="481" width="344" height="50"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Ekn-wf-q0F" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Yc8-bl-geS"/>
+                <constraint firstItem="Ekn-wf-q0F" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" constant="-70" id="eE6-MM-BcQ"/>
+                <constraint firstItem="Ekn-wf-q0F" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="25" id="rgL-lu-jzs"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>
